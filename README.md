@@ -1,4 +1,4 @@
-<a href="http://localhost:3000">RentProof</a>
+<a href="http://localhost:3000">RentProof MyPrototype</a>
 # RentProof 🏠
 
 **Rental Property Condition Inspection & Evidence Comparison Platform**
