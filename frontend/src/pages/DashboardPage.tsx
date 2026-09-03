@@ -36,29 +36,29 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
   return (
     <div className="space-y-6">
       {/* Welcome Banner */}
-      <div className="bg-linear-to-r from-brand-500 to-brand-600 rounded-2xl p-6 text-white shadow-lg shadow-brand-500/15 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
-        <div>
-          <span className="bg-white/20 text-white text-[11px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">
+      <div className="bg-stone-900 border border-stone-800 rounded-2xl p-6 md:p-7 text-white shadow-xl flex flex-col md:flex-row items-start md:items-center justify-between gap-5 relative overflow-hidden">
+        <div className="space-y-2 relative z-10">
+          <span className="inline-block bg-brand-500 text-white text-[11px] font-black px-3 py-1 rounded-full uppercase tracking-wider shadow-xs">
             Property Condition Standard
           </span>
-          <h2 className="text-2xl font-black mt-2 tracking-tight">RentProof Evidence Engine</h2>
-          <p className="text-white/90 text-xs md:text-sm mt-1 max-w-xl">
+          <h2 className="text-2xl md:text-3xl font-black tracking-tight text-white">RentProof Evidence Engine</h2>
+          <p className="text-stone-300 text-xs md:text-sm max-w-xl leading-relaxed">
             Organize move-in and move-out condition photos, run AI agent comparisons by room, and generate neutral, print-ready reports.
           </p>
         </div>
-        <div className="flex flex-wrap gap-3">
+        <div className="flex flex-wrap gap-3 relative z-10 shrink-0">
           <button
             onClick={onCreateNew}
-            className="px-4 py-2.5 rounded-xl bg-white text-brand-600 font-extrabold text-xs shadow-md hover:bg-brand-50 transition-all flex items-center gap-2 cursor-pointer"
+            className="px-4 py-2.5 rounded-xl bg-brand-500 hover:bg-brand-600 text-white font-extrabold text-xs shadow-md shadow-brand-500/30 transition-all flex items-center gap-2 cursor-pointer"
           >
             <FilePlus size={16} />
             <span>+ Create Inspection</span>
           </button>
           <button
             onClick={onOpenDemoInspection}
-            className="px-4 py-2.5 rounded-xl bg-brand-700/80 text-white font-bold text-xs hover:bg-brand-800 border border-white/20 transition-all flex items-center gap-2 cursor-pointer"
+            className="px-4 py-2.5 rounded-xl bg-stone-800 hover:bg-stone-700 text-stone-200 font-bold text-xs border border-stone-700 transition-all flex items-center gap-2 cursor-pointer"
           >
-            <Layers size={16} />
+            <Layers size={16} className="text-brand-500" />
             <span>Open Demo Inspection</span>
           </button>
         </div>
