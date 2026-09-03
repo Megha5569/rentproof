@@ -1,4 +1,4 @@
- http://localhost:3000
+<a href="http://localhost:3000">RentProof – Open Application</a>
 # RentProof 🏠
 
 **Rental Property Condition Inspection & Evidence Comparison Platform**
